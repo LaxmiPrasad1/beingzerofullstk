@@ -1,1 +1,7 @@
-<p>pricing works!</p>
+<h1>count: {{count}}</h1>
+<div *ngFor="let usr of users.arr" class="w3-card-4" style="width: 30%;">
+    <img src="{{usr.avatar_url}}" height=100px width=100px class="img-thumbnail">
+    <div class="w3-container w3-center">
+      <p>{{usr.login}}</p>
+    </div>
+  </div>
